@@ -1,111 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ejemplo APP</title>
-	<link rel="shortcut icon" href="img/lite.png">
-	<link rel="stylesheet" href="C:\Users\USUARIO\Desktop\Parcial1\themecolor.css" />
-  	<link rel="stylesheet" href="C:\Users\USUARIO\Desktop\Parcial1\themecolor.min.css" />
-	<link rel="stylesheet" href= "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="C:\Users\USUARIO\Desktop\Parcial1\themecolor.css">
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body align="center">
+	<title>Ejemplo JQUERY Mobile</title>
+	<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css" />
 
-	<div data-role="page" id="inicio" data-theme="A">
+	<link rel="stylesheet" href="jquerymobile/tema2.min.css" />
+	<link rel="stylesheet" href="jquerymobile/jquery.mobile.icons.min.css">
+	<script src="jquerymobile/jquery-1.11.1.min.js"></script>
+	<script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: rgb(114, 158, 207);">
+	<div data-role="page" id="inicio" data-theme="a">
+
 		<div data-role="header">
-			<h1>Inicio</h1><br>
-			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum porro accusamus ullam perspiciatis, iusto velit error pariatur, minus impedit tenetur nesciunt fugit quia quibusdam repellat, excepturi doloremque expedita asperiores dolores.</p>
-			<img src="img/terra.jpg" width="70%" alt="">
+			<h1>Ejemplo APP</h1>
 		</div>
+
+		<div style="background-color: rgb(178, 110, 218);" role="main" class="ui-content">
+			<h2>Bienvenido</h2><hr>
+			<p>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis fugit, rerum reprehenderit ducimus esse odit quae, quidem, nobis fuga eligendi amet quo quisquam laborum earum nulla tempora. Vel, placeat. Dolorem.
+				<br><hr><footer>Contreras Higuera Sherlyn </footer>
+				
+			
+			</p>
+			<img src="img/img1.png" alt="" width="70%">
+		</div>
+
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li>
-						<a href="#" class="ui-btn-desactive" data-icon="grid">Inicio</a>
-					</li>
-					<li>
-						<a href="#productos" data-icon="star">productos</a>
-					</li>
-					<li>
-						<a href="#carrito" data-icon="gear">Carrito</a>
-					</li>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
+					
 				</ul>
 			</div>
 		</div>
 	</div>
 
-	<div data_role="page" id="productos">
+	<div data-role="page" id="productos" data-theme="b">
 		<div data-role="header">
-			<h1>Producto</h1>
+			<h1>Ejemplo APP</h1>
 		</div>
-		<div class="ui-content" role="main">
-			<h2>Listado de productos</h2>
+
+		<div style="border: rgb(73, 48, 218); font-family: Arial, Helvetica, sans-serif; background-color: rgb(161, 128, 223);" role="main" class="ui-content">
+			<h2>Listado de productos</h2><hr>
 			<ol data-role="listview">
-				<li>Bitcoin</li>
-				<li>Dogecoin</li>
-				<li>Ethereum</li>
-				<li>Polkadot</li>
-				<li>Cardano</li>
+			    <li>Bitcoin</li>
+			    <li>Ether</li>
+			    <li>Binance Coin</li>
+			    <li>Dogecoin</li>
+			    <li>Luna</li>
 			</ol>
 		</div>
+
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li>
-						<a href="#inicio" data-icon="grid">Inicio</a>
-					</li>
-					<li>
-						<a href="#" class="ui-btn-active" data-icon="star">productos</a>
-					</li>
-					<li>
-						<a href="#carrito" data-icon="gear">Carrito</a>
-					</li>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
 				</ul>
 			</div>
-		</div>	
+		</div>
 	</div>
-	<div data_role="page" id="carrito">
+
+	<div data-role="page" id="carrito" data-theme="c">
 		<div data-role="header">
-			<h1>Carrito</h1>
+			<h1>Ejemplo APP</h1>
 		</div>
-		<div class="ui-content" role="main">
-			<h2>Productos en carrito</h2>
+
+		<div style="background-color: blueviolet;" role="main" class="ui-content">
+			<h2>Carrito de compras</h2><hr>
 			<ul data-role="listview" data-inset="true">
-				<li>
-					<a href="#"><img src="img/doge.png" alt=""><h2>Dogecoin</h2><p>0.15 USD</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="img/img1.png" alt=""><h2>Bitcoin</h2><p>44,014.40 USD</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="img/dev.png" alt=""><h2>Ethereum</h2><p>3,140.44 USD</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="img/lite.png" alt=""><h2>Polkadot</h2><p>17.18 USD</p></a>
-				</li>
-				<li>
-					<a href="#"><img src="img/name.png" alt=""><h2>Cardano</h2><p>1.10 USD</p></a>
-				</li>
+			    <li><a href="#">
+			        <img src="img/lite.png">
+			        <h2>Litecoin</h2>
+			        <p>164.93 USD</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/name.png">
+			        <h2>Namecoin</h2>
+			        <p>12,696.78 USD</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/dev.png">
+			        <h2>Devcoin</h2>
+			        <p>0.000023 USD </p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/terra.jpg">
+			        <h2>Terracoin</h2>
+			        <p>0.0335809 USD</p></a>
+			    </li>
+				<li><a href="#">
+			        <img src="img/doge.png">
+			        <h2>Dogecoin</h2>
+			        <p>0.19 USD</p></a>
+			    </li>
 			</ul>
+			<br><hr><footer>Contreras Higuera Sherlyn</footer>
 		</div>
+
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li>
-						<a href="#inicio" data-icon="grid">Inicio</a>
-					</li>
-					<li>
-						<a href="#productos" data-icon="star">productos</a>
-					</li>
-					<li>
-						<a href="#" class="ui-btn-active" data-icon="gear">Carrito</a>
-					</li>
+					<li><a href="#inicio" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+					<li><a href="#productos" data-icon="star">Productos</a></li>
+					<li><a href="#carrito" data-icon="gear">Carrito</a></li>
 				</ul>
 			</div>
-		</div>	
+		</div>
 	</div>
+	<br><hr><footer>Contreras Higuera Sherlyn</footer>
+
 </body>
 </html>
