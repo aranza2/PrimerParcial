@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="practica2.js"></script>
+    <title>Practica JavaScript</title>
+
+</head>
+<body>
+    <h1>Practica JavaScript</h1>
+    
+    <div id="div1" onmouseover="cambiacolor()" onmouseout="regresacolor()">
+        Texto del div1
+    </div><br>
+
+    <button onclick="cambiacolor()">Cambiar color</button>
+
+    <h2>Productos</h2><hr>
+    <h3>Producto 1 <input type="number" id="p1" value="0" onchange="actualizaTotal(document.getElementById('p1').value)"></h3>
+    <h3>Producto 2 <input type="number" id="p2" value="0" onchange="actualizaTotal(document.getElementById('p2').value)">></h3>
+    <h3>Producto 3 <input type="number" id="p3" value="0" onchange="actualizaTotal(document.getElementById('p3').value)">></h3>
+    <h3>Producto 4 <input type="number" id="p4" value="0" onchange="actualizaTotal(document.getElementById('p4').value)">></h3>
+
+    <h3>Total: <input type="number" value="0" id="total"></h3>
+</body>
+</html>
